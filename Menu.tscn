@@ -1,0 +1,111 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://ART/logo.png" type="Texture" id=1]
+[ext_resource path="res://ART/darkblue.png" type="Texture" id=2]
+[ext_resource path="res://MenuManager.gd" type="Script" id=3]
+[ext_resource path="res://ART/boss6.png" type="Texture" id=4]
+[ext_resource path="res://ART/m6x11.ttf" type="DynamicFontData" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 5 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 159.5, 90 )
+scale = Vector2( 19.9375, 11.25 )
+texture = ExtResource( 2 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 162, 49 )
+texture = ExtResource( 1 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 146.0
+margin_top = 92.0
+margin_right = 186.0
+margin_bottom = 132.0
+custom_fonts/normal_font = SubResource( 1 )
+text = "START"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+margin_left = 126.0
+margin_top = 116.0
+margin_right = 208.0
+margin_bottom = 156.0
+custom_fonts/normal_font = SubResource( 1 )
+text = "HOW TO PLAY"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="."]
+margin_left = 138.0
+margin_top = 142.0
+margin_right = 220.0
+margin_bottom = 182.0
+custom_fonts/normal_font = SubResource( 1 )
+text = "CREDITS
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite3" type="Sprite" parent="."]
+position = Vector2( 83, 91 )
+texture = ExtResource( 4 )
+
+[node name="HowToPlay" type="Node2D" parent="."]
+visible = false
+
+[node name="Sprite" type="Sprite" parent="HowToPlay"]
+position = Vector2( 159.5, 90 )
+scale = Vector2( 19.9375, 11.25 )
+texture = ExtResource( 2 )
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="HowToPlay"]
+margin_left = 6.0
+margin_top = 8.0
+margin_right = 316.0
+margin_bottom = 180.0
+custom_fonts/normal_font = SubResource( 1 )
+text = "Dash and place your gems to create a triangle loop around your fated enemy. Victory is in sight…
+
+Controls
+Arrows / WASD : Move your character Space : Dash. A gem will be placed at the end of your dash.
+
+Enclose items and enemies inside a triangle of gems and see what happens…
+"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Credits" type="Node2D" parent="."]
+visible = false
+
+[node name="Sprite" type="Sprite" parent="Credits"]
+position = Vector2( 159.5, 90 )
+scale = Vector2( 19.9375, 11.25 )
+texture = ExtResource( 2 )
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="Credits"]
+margin_left = 6.0
+margin_top = 8.0
+margin_right = 316.0
+margin_bottom = 180.0
+custom_fonts/normal_font = SubResource( 1 )
+text = "DUEL is a short action game made in less than 24 hours for the 47th edition of Ludum Dare.
+
+Made with Godot v3.2.3, Aseprite, PowerPoint, Bxfr, Bosca Ceoil and Musescore. Font is m6x11 by Daniel Linssen
+
+Courtesy of JLV. Trying my hands at some real gameplay, for once. Let’s see how it goes…
+"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
